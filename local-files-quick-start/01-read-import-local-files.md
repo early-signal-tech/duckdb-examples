@@ -44,7 +44,7 @@ SELECT * FROM 'test.parquet';
 Read all Parquet files in a directory using a wildcard:
 
 ```bash
-SELECT * FROM 'test/*.parquet';
+SELECT * FROM '*.parquet';
 ```
 
 Create a persistent DuckDB table from a Parquet file:
@@ -221,30 +221,9 @@ FROM texts;
 
 Here's a complete workflow demonstrating several file types. First, set up the sample data files:
 
-### Setup Sample Data Files
-
-Run this script to generate the sample parquet and CSV files:
-
-```bash
-python3 setup_sample_data.py
-```
-
-Or create the files manually:
-
-**orders.csv:**
-```bash
-curl https://raw.githubusercontent.com/duckdb/duckdb-examples/main/orders.csv -o orders.csv
-```
-
-**products.parquet:**
-If you have DuckDB installed, you can create it with:
-```bash
-duckdb -c "COPY (SELECT 101 as id, 'Laptop' as name, 1299.99 as price UNION ALL SELECT 102, 'Mouse', 29.99 UNION ALL SELECT 103, 'Keyboard', 79.99 UNION ALL SELECT 104, 'Monitor', 299.99 UNION ALL SELECT 105, 'Headphones', 149.99) TO 'products.parquet';"
-```
-
 ### Run the Complete Workflow
 
-Once you have the sample files, here's a complete workflow demonstrating several file types:
+Here's a complete workflow demonstrating several file types:
 
 ```bash
 # 1. Start DuckDB session
