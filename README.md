@@ -4,7 +4,7 @@ DuckDB examples for streams and demos. This repository contains practical, step-
 
 ## Tutorials
 
-### 1. [Read and Import Local Files](./01-read-import-local-files.md)
+### 1. [Read and Import Local Files](./local-files-quick-start/01-read-import-local-files.md)
 A comprehensive guide to reading and importing local files with DuckDB, covering:
 - **Parquet files** - The most efficient format for DuckDB
 - **CSV files** - Auto-inference and custom schemas
@@ -12,6 +12,8 @@ A comprehensive guide to reading and importing local files with DuckDB, covering
 - **Text & Markdown files** - Reading file content as queryable data
 
 Perfect for beginners or anyone learning DuckDB's elegant data import capabilities.
+
+**Location:** `local-files-quick-start/`
 
 ## Getting Started
 
