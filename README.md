@@ -15,6 +15,17 @@ Perfect for beginners or anyone learning DuckDB's elegant data import capabiliti
 
 **Location:** `local-files-quick-start/`
 
+### 2. [Read and Import Remote Files](./remote-sources-quick-start/01-read-import-remote-files.md)
+A comprehensive guide to reading and importing remote files from the internet with DuckDB, covering:
+- **CSV, Parquet & JSON files** - Loading data directly from URLs
+- **HTTP headers & authentication** - Working with password-protected resources
+- **Performance considerations** - Tips for querying large remote datasets
+- **Real-world examples** - Practical workflows for remote data analysis
+
+Learn how to query data without downloading it first!
+
+**Location:** `remote-sources-quick-start/`
+
 ## Getting Started
 
 1. Install DuckDB: https://duckdb.org/docs/installation/
